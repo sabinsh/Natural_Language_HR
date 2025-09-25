@@ -1,0 +1,20 @@
+version: "3.9"   # newer Compose version
+
+
+
+services:
+  db:
+    image: postgres:15
+    container_name: hr_postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: hrdb
+    volumes:
+      - db-data:/var/lib/postgresql/data
+      - ./init_db.sql:/docker-entrypoint-initdb.d/init_db.sql:ro
+    ports:
+      - "5432:5432"  
+
+volumes:
+  db-data:

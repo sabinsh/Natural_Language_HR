@@ -1,0 +1,20 @@
+# Web framework
+fastapi==0.109.0
+uvicorn[standard]==0.23.2
+
+# Database
+sqlalchemy==2.0.20
+psycopg2-binary==2.9.9
+pandas==2.1.1
+
+# Environment variables
+python-dotenv==1.0.0
+
+# Data validation
+pydantic==1.10.7
+
+# AI / APIs
+openai==1.109.1
+
+# SQL formatting
+sqlparse==0.5.3
