@@ -158,7 +158,7 @@ pip install -r requirements.txt
 
 1. Start PostgreSQL in Docker:  
    ```bash
-   docker-compose up -d
+   docker-compose -f infra/docker-compose.yml up -d
    ```
 
 2. Start backend and frontend:  
